@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DASHBOARD</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+    <body class="dashboard-container">
+        
+        <!--Navbar-->
+        <nav>
+
+            <!--logo and links section-->
+            <section class="ll-section">
+                <!--logo-->
+                <h3>Rehoboth.<br>Diagnostics</h3>
+                <!--links-->
+                <ul>
+                    <li><a href="#" id="home-btn"><i class="material-icons">home</i>Home</a></li>
+                    <li><a href="#"><i class="material-icons">add</i>Specimen</a></li>
+                    <li><a href="#" id="record-link"><i class="material-icons">receipt</i>Other Records</a></li>
+                    <li><a href="#"><i class="material-icons">inventory_2</i>Inventory</a></li>
+                    <li><a href="#"><i class="material-icons">money</i>Financial</a></li>
+                    <li><a href="#"><i class="material-icons">money</i>Human Resources</h6></a></li>
+                    <br><br>
+                    <li><a href="#"><i class="material-icons">add</i>Settings</a></li>
+                    <li><a href="#"><i class="material-icons">receipt</i>Administration</a></li>
+                    <li><a href="#"><i class="material-icons">inventory_2</i>Help and Support</a></li>
+                </ul>
+            </section>
+
+            <!--user profile section-->
+            <br><br>
+            <section class="user-profile">
+                <img src="../img/solemn (2022_02_11 23_09_57 UTC).jpg" alt="user-pic" id="user-pic">
+                <p id="user-name">Olutoyin Omoniyi-Esan<br>@admin</p>
+                <i class="material-icons" id="logout">logout</i>
+            </section>
+            <br>
+        </nav>
+
+
+
+        <!--Main section-->
+        <aside class="home-section">
+
+            <!--To color the top of the section-->
+            <header id="hs-header"></header>
+
+            <!--main section heading-->
+            <span id="search-input">
+                <i class="material-icons" id="search-icon">search</i>
+                <input type="text" name="search" id="search" placeholder="search records, names">
+            </span>
+            <h1>Welcome, Admin</h1>
+            <br>
+            <hr>
+
+
+            <!--Top information section-->
+            <section class="top-info">
+                <span id="important">
+                    <i class="material-icons" id="info-icon">info</i>
+                    <p>Some features might require you to type in your password or a security code for added Data Security e.g Financial </p>
+                </span>
+                <button id="info-btn">
+                    <i class="material-icons" id="new-icon">add</i>
+                    <p>New Specimen</p>
+                </button>
+            </section>
+
+
+            <!--Summary section-->
+            <section class="summary-section">
+
+                <h2>Summary</h2>
+                <br>
+
+                <div class="summaries">
+
+                    <div class="summary">
+                        <!--vertical line-->
+                        <div class="vertical-line"></div>
+                        <div>
+                            <span>
+                                <p class="specimens">
+                                    <span class="num">29</span> 
+                                    <span class="specimen-n">Specimens</span>
+                                </p>
+                                <p class="specimen-n">Processed This Month</p>
+                            </span>
+                            <br>
+
+                            <span>
+                                <p class="specimens">
+                                    <span class="num">172</span> 
+                                    <span class="specimen-n">Specimens</span>
+                                </p>
+                                <p class="specimen-n">Processed This Year</p>
+                            </span>
+                        </div>
+                    </div>
+
+                
+                    <div class="summary">
+
+                        <!--vertical line-->
+                        <div class="vertical-line"></div>
+                        <div>
+                            <span>
+                                <p class="specimens">
+                                    <span class="num">$</span>
+                                    <span class="asterick"> *****</span>
+                                </p>
+                                <p class="specimen-n">Profit this Month</p>
+                            </span>
+                        
+                            <span>
+                                <p class="specimens" id="spendings">
+                                    <span class="num">$</span>
+                                    <span class="asterick">*****</span>
+                                </p>
+                                <p class="specimen-n">Spent this Month</p>
+                                <a href="#" id="summary-link">Click to view Financial Report ></a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <!--Table-->
+            <table>
+
+                <!--headings-->
+                <tr class="table-headings">
+                    <th><input type="checkbox" name="checkbox" id="checkbox" value=""></th>
+                    <th>Serial No</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Specimen Type</th>
+                    <th>Health Center</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td>Rehoboth ENT</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td id="uch">University College Hospital, Ibadan</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td>Rehoboth ENT</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td>Rehoboth ENT</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td>Rehoboth ENT</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id="checkbox" value=""></td>
+                    <td>RH/2024/390</td>
+                    <td>Oluwatobiloba Majekodunmi</td>
+                    <td>M</td>
+                    <td>78</td>
+                    <td>Cytology</td>
+                    <td>Rehoboth ENT</td>
+                    <td><span class="status">Processed</span></td>
+                </tr>
+            </table>
+           
+        </aside>
+
+    </body>
+
+</html>
